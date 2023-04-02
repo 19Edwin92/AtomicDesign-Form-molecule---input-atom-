@@ -15,8 +15,8 @@ function FormThird1() {
   return (
     <form onSubmit={handleSubmit}>
       {inputList1.map((input, index) => (
-        <div key={index}>
           <AtomicInput
+            key={index}
             label={input.label}
             inputProps={{
               type: input.type,
@@ -25,7 +25,6 @@ function FormThird1() {
               onChange: handleInputChange,
             }}
           />
-        </div>
       ))}
       <button type="submit">Submit</button>
     </form>
