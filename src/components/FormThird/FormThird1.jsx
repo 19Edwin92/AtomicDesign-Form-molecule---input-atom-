@@ -1,7 +1,7 @@
 import React from 'react'
-import AtomicInput from './AtomicInput'
-import { useLoginForm } from './useLoginForm';
+import { useLoginForm } from '../FormSecend/useLoginForm';
 import { inputList1 } from './inputlist';
+import AtomicInput from '../FormSecend/AtomicInput';
 
 function FormThird1() {
   const [formState, setFormState,handleInputChange] = useLoginForm();
